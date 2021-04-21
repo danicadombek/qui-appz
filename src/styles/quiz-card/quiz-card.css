@@ -2,6 +2,7 @@
   background-color: rgb(109, 107, 143);
   display: grid;
   grid-gap: 12px;
+  justify-content: center;
   max-width: 600px;
   position: relative;
   padding: 10px;
@@ -23,6 +24,9 @@
 
 .quiz-card__button {
   width: fit-content;
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
 }
 
 .quiz-card_list {
@@ -31,4 +35,5 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0;
+  margin-bottom: 0;
 }
