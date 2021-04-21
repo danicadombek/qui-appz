@@ -1,0 +1,39 @@
+.quiz-card {
+  background-color: rgb(109, 107, 143);
+  display: grid;
+  grid-gap: 12px;
+  justify-content: center;
+  max-width: 600px;
+  position: relative;
+  padding: 10px;
+}
+
+.quiz-card__bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  border: 20px solid rgb(136, 135, 135);
+  border-bottom-color: transparent;
+  height: 40px;
+}
+
+.quiz-card__bookmark--selected {
+  border: 20px solid rgb(191, 201, 150);
+  border-bottom-color: transparent;
+}
+
+.quiz-card__button {
+  width: fit-content;
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+}
+
+.quiz-card_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
