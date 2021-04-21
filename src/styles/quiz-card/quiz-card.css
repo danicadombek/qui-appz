@@ -10,17 +10,22 @@
   border-radius: 8px;
 }
 
+.quiz-card__headline {
+  font-size: 24px;
+}
+
 .quiz-card__bookmark {
   position: absolute;
   top: -10px;
   right: 10px;
-  border: 20px solid rgb(136, 135, 135);
+  border: 20px solid rgb(53, 52, 77);
   border-bottom-color: transparent;
+  width: 25px;
   height: 40px;
 }
 
 .quiz-card__bookmark--selected {
-  border: 20px solid rgb(191, 201, 150);
+  border: 20px solid rgb(233, 233, 158);
   border-bottom-color: transparent;
 }
 
@@ -32,7 +37,11 @@
   width: fit-content;
   position: absolute;
   left: 100px;
-  bottom: 55px;
+  bottom: 58px;
+  border-radius: 6px;
+  border-color: grey;
+  background-color: rgb(53, 52, 77);
+  color: beige;
 }
 
 .quiz-card__list {
@@ -41,5 +50,13 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 3px;
+}
+
+.quiz-card__listelement {
+  background-color: rgb(233, 233, 184);
+  padding: 0 15px;
+  border-radius: 6px;
+  font-variant-caps: all-petite-caps;
+  line-height: 20px;
 }
