@@ -11,7 +11,7 @@
 }
 
 .quiz-card__headline {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .quiz-card__bookmark {
@@ -20,8 +20,6 @@
   right: 10px;
   border: 20px solid rgb(53, 52, 77);
   border-bottom-color: transparent;
-  width: 25px;
-  height: 40px;
 }
 
 .quiz-card__bookmark--selected {
