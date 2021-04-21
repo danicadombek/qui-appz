@@ -5,7 +5,9 @@
   justify-content: center;
   max-width: 600px;
   position: relative;
-  padding: 10px;
+  padding: 20px 20px 10px;
+  box-shadow: 8px 8px rgba(78, 78, 78, 0.2);
+  border-radius: 8px;
 }
 
 .quiz-card__bookmark {
@@ -22,14 +24,18 @@
   border-bottom-color: transparent;
 }
 
+.quiz-card__copytext {
+  margin: 0 auto 40px;
+}
+
 .quiz-card__button {
   width: fit-content;
   position: absolute;
   left: 100px;
-  bottom: 50px;
+  bottom: 55px;
 }
 
-.quiz-card_list {
+.quiz-card__list {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
