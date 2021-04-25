@@ -14,6 +14,13 @@ body {
   row-gap: 30px;
 }
 
+main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 30px;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3 {
