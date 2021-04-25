@@ -9,11 +9,22 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
+  display: grid;
+  grid-template-rows: 50px auto 50px;
+  row-gap: 30px;
+  height: 100vh;
+  max-width: 600px;
 }
 
-main {
+.app-main {
+  overflow-y: scroll;
+}
+
+.app-main__quiz-cards {
   display: grid;
-  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 30px;
+  justify-content: center;
 }
 
 h1,
