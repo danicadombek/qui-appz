@@ -1,0 +1,18 @@
+.footer__navi {
+  background-color: rgb(233, 233, 184);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding-top: 5px;
+}
+
+.footer__navi-img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__navi-img-smaller {
+  width: 40px;
+  height: 35px;
+}
