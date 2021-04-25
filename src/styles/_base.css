@@ -9,11 +9,9 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-}
-
-main {
   display: grid;
-  grid-gap: 20px;
+  grid-template-rows: 50px auto 50px;
+  row-gap: 30px;
 }
 
 h1,
