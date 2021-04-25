@@ -5,8 +5,9 @@
 }
 
 .app-header__heading {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
