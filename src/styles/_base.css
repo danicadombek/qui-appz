@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+main {
+  display: grid;
+  grid-gap: 20px;
+}
+
 h1,
 h2,
 h3 {

@@ -27,7 +27,7 @@
   border-bottom-color: transparent;
 }
 
-.quiz-card__copytext {
+.quiz-card__text {
   margin: 0 auto 40px;
 }
 
@@ -51,7 +51,7 @@
   margin-bottom: 3px;
 }
 
-.quiz-card__listelement {
+.quiz-card__list-element {
   background-color: rgb(233, 233, 184);
   padding: 0 15px;
   border-radius: 6px;
