@@ -12,11 +12,17 @@ body {
   display: grid;
   grid-template-rows: 50px auto 50px;
   row-gap: 30px;
+  height: 100vh;
+  max-width: 600px;
 }
 
-main {
+.app-main {
+  overflow-y: scroll;
+}
+
+.app-main__quiz-cards {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
   row-gap: 30px;
   justify-content: center;
 }
