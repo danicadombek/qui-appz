@@ -37,7 +37,6 @@ buttonCreate.addEventListener('click', () => {
   createPage.classList.remove('hidden')
 })
 
-const cardBookmark = document.querySelector('.card-bookmark')
 const divBookmark = document.querySelector('.div-bookmark')
 
 divBookmark.addEventListener('click', () => {
