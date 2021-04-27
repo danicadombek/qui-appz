@@ -15,15 +15,8 @@ body {
   max-width: 600px;
 }
 
-.app-main {
+body > main {
   overflow-y: scroll;
-}
-
-.app-main__quiz-cards {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 8px;
-  justify-content: center;
 }
 
 h1,

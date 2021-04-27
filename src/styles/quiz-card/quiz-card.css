@@ -1,3 +1,10 @@
+.app-main__quiz-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 8px;
+  justify-content: center;
+}
+
 .quiz-card {
   background-color: rgb(169, 168, 201);
   display: grid;

@@ -11,10 +11,10 @@
 }
 
 .app-create__button {
-  width: fit-content;
+  width: 80px;
   position: relative;
-  left: 90px;
-  bottom: -40px;
+  left: -30;
+  bottom: 10px;
   border-radius: 6px;
   border-color: grey;
   background-color: rgb(72, 71, 102);
