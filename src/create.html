@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1 class="app-header__heading">Create</h1>
+    </header>
+    <main>
+      <section class="app-create">
+        <form class="app-create__form">
+          <label>
+            Add question
+            <textarea cols="30" rows="5" required> </textarea>
+          </label>
+          <label>
+            Add answer
+            <textarea cols="30" rows="5" required> </textarea>
+          </label>
+          <label for="tags">
+            Add tags
+            <input type="text" id="tags" />
+          </label>
+
+          <button class="app-create__button">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer__navi">
+      <nav class="footer__navi-home">
+        <a href="index.html">
+          <img src="assets/home.png" class="footer__navi-img-smaller" alt="" />
+        </a>
+      </nav>
+
+      <nav class="footer__navi-bookmark">
+        <a href="bookmark.html"
+          ><img src="assets/bookmark.png" class="footer__navi-img" alt="" />
+        </a>
+      </nav>
+      <nav class="footer__navi-create footer__navi-page-state">
+        <a href="">
+          <img src="assets/create.png" class="footer__navi-img" alt="" />
+        </a>
+      </nav>
+
+      <nav class="footer__navi-profile">
+        <a href=""
+          ><img
+            src="assets/profile.png"
+            class="footer__navi-img-smaller"
+            alt=""
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
