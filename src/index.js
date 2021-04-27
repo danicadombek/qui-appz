@@ -46,3 +46,14 @@ divBookmark.addEventListener('click', () => {
 divBookmark.addEventListener('click', () => {
   divBookmark.classList.toggle('unselected')
 })
+
+const buttonAnswer = document.querySelector('.button-answer')
+const answerText = document.querySelector('.answer-text')
+
+buttonAnswer.addEventListener('click', () => {
+  answerText.classList.toggle('answer-text')
+})
+
+buttonAnswer.addEventListener('click', () => {
+  answerText.classList.toggle('hidden')
+})
