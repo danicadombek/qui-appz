@@ -4,7 +4,11 @@
   background-color: ;
 }
 
-.app-navigation__button {
+button {
   background-color: rgb(169, 168, 201);
   border-radius: 10px;
+}
+
+.active {
+  background-color: yellow;
 }
