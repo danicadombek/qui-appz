@@ -6,31 +6,34 @@
     <title>Quiz App</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="app-header">
       <h1 class="app-header__heading">Quiz App</h1>
     </header>
-    <main>
+    <!-- quiz app -->
+    <main class="home-page">
       <section class="app-main__quiz-cards">
-        <section class="quiz-card">
+        <section class="quiz-card card-bookmark">
           <h2 class="quiz-card__headline">Questions</h2>
           <div
             role="button"
-            class="quiz-card__bookmark"
+            class="quiz-card__bookmark div-bookmark"
             aria-label="bookmark"
           ></div>
           <p class="quiz-card__text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt.
           </p>
-          <button class="quiz-card__button">Show answer</button>
+          <button class="quiz-card__button button-answer">Show answer</button>
           <ul class="quiz-card__list">
             <li class="quiz-card__list-element">HTML</li>
             <li class="quiz-card__list-element">CSS</li>
             <li class="quiz-card__list-element">Java Script</li>
           </ul>
         </section>
+        <section class="answer-text hidden">Hier steht eine Antwort.</section>
         <section class="quiz-card">
           <h2 class="quiz-card__headline">Questions</h2>
           <div
@@ -69,31 +72,36 @@
         </section>
       </section>
     </main>
-    <footer class="footer__navi">
-      <nav class="footer__navi-home footer__navi-page-state">
-        <a href="index.html">
-          <img src="assets/home.png" class="footer__navi-img-smaller" alt="" />
-        </a>
-      </nav>
+    <!-- bookmark -->
+    <main class="bookmark-page hidden"></main>
+    <!-- formular -->
+    <main class="create-page hidden">
+      <section class="app-create">
+        <form class="app-create__form">
+          <label>
+            Add question
+            <textarea cols="32" rows="5" required> </textarea>
+          </label>
+          <label>
+            Add answer
+            <textarea cols="32" rows="5" required> </textarea>
+          </label>
+          <label for="tags">
+            Add tags
+            <input type="text" id="tags" />
+          </label>
 
-      <nav class="footer__navi-bookmark">
-        <a href="bookmark.html"
-          ><img src="assets/bookmark.png" class="footer__navi-img" alt="" />
-        </a>
-      </nav>
-      <nav class="footer__navi-create">
-        <a href="create.html">
-          <img src="assets/create.png" class="footer__navi-img" alt="" />
-        </a>
-      </nav>
-
-      <nav class="footer__navi-profile">
-        <a href=""
-          ><img
-            src="assets/profile.png"
-            class="footer__navi-img-smaller"
-            alt=""
-        /></a>
+          <button class="app-create__button">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <nav class="app-navigation">
+        <button class="button-home">Home</button>
+        <button class="button-bookmark">Bookmark</button>
+        <button class="button-create">Create</button>
+        <button class="button-profile">Profile</button>
       </nav>
     </footer>
   </body>

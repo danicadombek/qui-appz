@@ -1,0 +1,25 @@
+.app-navigation {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(169, 168, 201);
+}
+
+button {
+  background-color: rgb(169, 168, 201);
+  border-radius: 10px;
+}
+
+.active {
+  background-color: yellow;
+}
+
+.selected {
+  border: 20px solid rgb(233, 233, 158);
+  border-bottom-color: transparent;
+}
+
+.unselected {
+  border: 20px solid rgb(72, 71, 102);
+  border-bottom-color: transparent;
+}
