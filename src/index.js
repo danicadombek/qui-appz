@@ -7,34 +7,38 @@ const homePage = document.querySelector('.home-page')
 const bookmarkPage = document.querySelector('.bookmark-page')
 const createPage = document.querySelector('.create-page')
 
-buttonHome.addEventListener('click', () => {
-  buttonHome.classList.add('active')
+const hideAllPages = () => {
+  homePage.classList.add('hidden')
+  bookmarkPage.classList.add('hidden')
+  createPage.classList.add('hidden')
+}
+
+const deactiveButtons = () => {
+  buttonHome.classList.remove('active')
   buttonBookmark.classList.remove('active')
   buttonCreate.classList.remove('active')
   buttonProfile.classList.remove('active')
+}
+
+buttonHome.addEventListener('click', () => {
+  hideAllPages()
   homePage.classList.remove('hidden')
-  bookmarkPage.classList.add('hidden')
-  createPage.classList.add('hidden')
+  deactiveButtons()
+  buttonHome.classList.add('active')
 })
 
 buttonBookmark.addEventListener('click', () => {
-  buttonHome.classList.remove('active')
-  buttonBookmark.classList.add('active')
-  buttonCreate.classList.remove('active')
-  buttonProfile.classList.remove('active')
-  homePage.classList.add('hidden')
+  hideAllPages()
   bookmarkPage.classList.remove('hidden')
-  createPage.classList.add('hidden')
+  deactiveButtons()
+  buttonBookmark.classList.add('active')
 })
 
 buttonCreate.addEventListener('click', () => {
-  buttonHome.classList.remove('active')
-  buttonBookmark.classList.remove('active')
-  buttonCreate.classList.add('active')
-  buttonProfile.classList.remove('active')
-  homePage.classList.add('hidden')
-  bookmarkPage.classList.add('hidden')
+  hideAllPages()
   createPage.classList.remove('hidden')
+  deactiveButtons()
+  buttonCreate.classList.add('active')
 })
 
 const divBookmark = document.querySelector('.div-bookmark')
