@@ -7,19 +7,6 @@ const homePage = document.querySelector('.home-page')
 const bookmarkPage = document.querySelector('.bookmark-page')
 const createPage = document.querySelector('.create-page')
 
-const hideAllPages = () => {
-  homePage.classList.add('hidden')
-  bookmarkPage.classList.add('hidden')
-  createPage.classList.add('hidden')
-}
-
-const deactiveButtons = () => {
-  buttonHome.classList.remove('active')
-  buttonBookmark.classList.remove('active')
-  buttonCreate.classList.remove('active')
-  buttonProfile.classList.remove('active')
-}
-
 buttonHome.addEventListener('click', () => {
   hideAllPages()
   homePage.classList.remove('hidden')
@@ -61,3 +48,16 @@ buttonAnswer.addEventListener('click', () => {
 buttonAnswer.addEventListener('click', () => {
   answerText.classList.toggle('hidden')
 })
+
+function hideAllPages() {
+  homePage.classList.add('hidden')
+  bookmarkPage.classList.add('hidden')
+  createPage.classList.add('hidden')
+}
+
+function deactiveButtons() {
+  buttonHome.classList.remove('active')
+  buttonBookmark.classList.remove('active')
+  buttonCreate.classList.remove('active')
+  buttonProfile.classList.remove('active')
+}
