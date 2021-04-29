@@ -1,5 +1,5 @@
-const buttonHome = document.querySelector('.button-home')
-const buttonBookmark = document.querySelector('.button-bookmark')
+const buttonHome = getElement('.button-home')
+const buttonBookmark = getElement('.button-bookmark')
 const buttonCreate = document.querySelector('.button-create')
 const buttonProfile = document.querySelector('.button-profile')
 
@@ -7,26 +7,28 @@ const homePage = document.querySelector('.home-page')
 const bookmarkPage = document.querySelector('.bookmark-page')
 const createPage = document.querySelector('.create-page')
 
-buttonHome.addEventListener('click', () => {
-  hideAllPages()
-  homePage.classList.remove('hidden')
-  deactiveButtons()
-  buttonHome.classList.add('active')
-})
+buttonHome.addEventListener('click', navigateToHome)
+buttonBookmark.addEventListener('click', navigateToBookmark)
+buttonCreate.addEventListener('click', navigateToCreate)
 
-buttonBookmark.addEventListener('click', () => {
-  hideAllPages()
-  bookmarkPage.classList.remove('hidden')
-  deactiveButtons()
-  buttonBookmark.classList.add('active')
-})
+function getElement(selector) {
+  return document.querySelector(selector)
+}
 
-buttonCreate.addEventListener('click', () => {
-  hideAllPages()
-  createPage.classList.remove('hidden')
-  deactiveButtons()
-  buttonCreate.classList.add('active')
-})
+function navigateToHome() {
+  changePage(homePage)
+  activatetButton(buttonHome)
+}
+
+function navigateToBookmark() {
+  changePage(bookmarkPage)
+  activatetButton(buttonBookmark)
+}
+
+function navigateToCreate() {
+  changePage(createPage)
+  activatetButton(buttonCreate)
+}
 
 const divBookmark = document.querySelector('.div-bookmark')
 
@@ -49,11 +51,23 @@ buttonAnswer.addEventListener('click', () => {
   answerText.classList.toggle('hidden')
 })
 
-function hideAllPages() {
+function changePage(page) {
   homePage.classList.add('hidden')
   bookmarkPage.classList.add('hidden')
   createPage.classList.add('hidden')
+  page.classList.remove('hidden')
 }
+
+function activatetButton(button) {
+  deactiveButtons()
+  button.classList.add('active')
+}
+
+// function hideAllPages() {
+//   homePage.classList.add('hidden')
+//   bookmarkPage.classList.add('hidden')
+//   createPage.classList.add('hidden')
+// }
 
 function deactiveButtons() {
   buttonHome.classList.remove('active')
