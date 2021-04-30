@@ -1,13 +1,11 @@
-import getElement from './utils/getElement'
+import getAllElements from './utils/getAllElements'
 
 export default function setupBookmark() {
-  const divBookmark = getElement('.div-bookmark')
+  const bookmarks = getAllElements('.quiz-card__bookmark')
 
-  divBookmark.addEventListener('click', () => {
-    divBookmark.classList.add('selected')
-  })
-
-  divBookmark.addEventListener('click', () => {
-    divBookmark.classList.toggle('unselected')
+  bookmarks.forEach(bookmark => {
+    bookmark.addEventListener('click', () => {
+      bookmark.classList.toggle('selected')
+    })
   })
 }
