@@ -1,19 +1,15 @@
 const buttonHome = getElement('.button-home')
 const buttonBookmark = getElement('.button-bookmark')
-const buttonCreate = document.querySelector('.button-create')
-const buttonProfile = document.querySelector('.button-profile')
+const buttonCreate = document.getElement('.button-create')
+const buttonProfile = document.getElement('.button-profile')
 
-const homePage = document.querySelector('.home-page')
-const bookmarkPage = document.querySelector('.bookmark-page')
-const createPage = document.querySelector('.create-page')
+const homePage = document.getElement('.home-page')
+const bookmarkPage = document.getElement('.bookmark-page')
+const createPage = document.getElement('.create-page')
 
 buttonHome.addEventListener('click', navigateToHome)
 buttonBookmark.addEventListener('click', navigateToBookmark)
 buttonCreate.addEventListener('click', navigateToCreate)
-
-function getElement(selector) {
-  return document.querySelector(selector)
-}
 
 function navigateToHome() {
   changePage(homePage)
@@ -74,4 +70,8 @@ function deactiveButtons() {
   buttonBookmark.classList.remove('active')
   buttonCreate.classList.remove('active')
   buttonProfile.classList.remove('active')
+}
+
+function getElement(selector) {
+  return document.querySelector(selector)
 }
